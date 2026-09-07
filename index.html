@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switchboard - Local Account Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <a href="#" class="brand">
+            <div class="logo">S</div>
+            Switchboard
+        </a>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#install">Install</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="local-badge">100% LOCAL &amp; ON-DEVICE</div>
+                <h1>Local account manager for Chrome and Firefox</h1>
+                <p class="intro">Switchboard is a purely local, privacy-first account manager. <strong>Every action happens entirely on your own device.</strong> There are no servers, no analytics, no remote code, and no cloud syncing. Your credentials never leave your machine.</p>
+                <div class="actions">
+                    <a href="#install" class="btn primary">Get Switchboard</a>
+                    <a href="https://github.com" class="btn secondary">View Source</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="preview">
+                    <div class="preview-top">
+                        <span>Switchboard</span>
+                        <span class="example">dola.com</span>
+                    </div>
+                    <h2>Switch accounts</h2>
+                    <div class="account selected">
+                        <div class="avatar">W</div>
+                        <div class="account-copy">
+                            <strong>Work Account</strong>
+                            <small>Active now</small>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="avatar">P</div>
+                        <div class="account-copy">
+                            <strong>Personal Account</strong>
+                            <small>Saved 2 hours ago</small>
+                        </div>
+                        <span class="pill">Switch &amp; refresh</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-title">
+                <h2>How it works differently</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Chrome</h3>
+                    <p>Save and restore named cookie snapshots. Maintains one active account per website across all normal windows. Switch & refresh existing tabs seamlessly.</p>
+                </div>
+                <div class="card">
+                    <h3>Firefox</h3>
+                    <p>Leverages native container tabs for simultaneous accounts in the same window. Superior isolation with built-in Firefox features.</p>
+                </div>
+                <div class="card">
+                    <h3>100% Local Storage</h3>
+                    <p>Credentials, cookies, and account settings remain entirely local on your physical device. Switchboard operates completely offline and never syncs, uploads, or transmits any of your data.</p>
+                </div>
+                <div class="card">
+                    <h3>Complete Control</h3>
+                    <p>Easily rename, forget, or manually export cookies as JSON. Restore snapshots on demand without relying on automatic session restoration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="install" class="install-section">
+            <div class="routine">
+                <div class="routine-text">
+                    <h2>Install locally</h2>
+                    <p>Currently in developer preview. Build from source using Node.js 20+.</p>
+                    <ol class="steps-list">
+                        <li>Run <code>npm run build</code></li>
+                        <li><strong>Chrome:</strong> Load unpacked from <code>dist/chrome</code></li>
+                        <li><strong>Firefox:</strong> Load Temporary Add-on from <code>dist/firefox</code></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Switchboard. All rights reserved.</p>
+        <p class="privacy"><a href="privacy-policy.html">Privacy Policy</a> &bull; Zero analytics.</p>
+    </footer>
+</body>
+</html>
