@@ -3,15 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Switch between multiple accounts without repeatedly signing in. Switchboard stores account sessions locally in Chrome and Firefox.">
-  <title>Switchboard — Switch accounts without signing in again</title>
+  <meta name="description" content="Switch between multiple accounts on the same website without repeatedly signing in. Switchboard works locally in Chrome and Firefox with no analytics.">
+  <title>Switchboard – Multiple Account Switcher for Chrome &amp; Firefox</title>
+  <link rel="canonical" href="https://switchboard.aungheinmynn.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Switchboard">
+  <meta property="og:title" content="Switchboard – Multiple Account Switcher for Chrome &amp; Firefox">
+  <meta property="og:description" content="Switch between multiple accounts on the same website without repeatedly signing in. Local account switching with no analytics.">
+  <meta property="og:url" content="https://switchboard.aungheinmynn.dev/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Switchboard – Multiple Account Switcher for Chrome &amp; Firefox">
+  <meta name="twitter:description" content="Switch between multiple accounts on the same website without repeatedly signing in.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Switchboard",
+    "description": "A local account switcher for using multiple accounts on the same website in Chrome and Firefox.",
+    "url": "https://switchboard.aungheinmynn.dev/",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Google Chrome, Mozilla Firefox",
+    "softwareVersion": "1.0.0",
+    "isAccessibleForFree": true,
+    "downloadUrl": "https://chromewebstore.google.com/detail/switchboard/ejcnljkokdiiedibolfkkbkdeebjiiln",
+    "sameAs": [
+      "https://github.com/HeinMynn/switchboard-extension",
+      "https://chromewebstore.google.com/detail/switchboard/ejcnljkokdiiedibolfkkbkdeebjiiln"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
     <a href="index.html" class="brand" aria-label="Switchboard home"><span class="logo" aria-hidden="true">S</span>Switchboard</a>
-    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#browsers">Browsers</a><a href="privacy-policy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#browsers">Browsers</a><a href="#faq">FAQ</a><a href="privacy-policy.html">Privacy</a></nav>
   </header>
 
   <main>
@@ -19,7 +51,7 @@
       <div>
         <p class="eyebrow">LOCAL ACCOUNT SWITCHING</p>
         <h1>Switch accounts without signing in again.</h1>
-        <p class="intro">Save the accounts you use on a website, then move between them from your browser toolbar. Switchboard has no server, analytics, or cloud account.</p>
+        <p class="intro">Save multiple accounts for the same website, then switch between them from your Chrome or Firefox toolbar. Switchboard has no server, analytics, or cloud account.</p>
         <div class="actions">
           <a class="btn primary" href="https://chromewebstore.google.com/detail/switchboard/ejcnljkokdiiedibolfkkbkdeebjiiln" target="_blank" rel="noopener noreferrer"><span class="chrome-mark" aria-hidden="true"></span>Add to Chrome</a>
           <a class="btn secondary" href="https://github.com/HeinMynn/switchboard-extension" target="_blank" rel="noopener noreferrer">View source</a>
@@ -72,6 +104,17 @@
     <section class="section backup-section">
       <div><p class="eyebrow">BACKUP &amp; RESTORE</p><h2>Take your saved accounts with you.</h2><p>Create a password-encrypted <code>.swb</code> backup and restore it on another device using the same browser type. You review its contents before anything is replaced.</p></div>
       <div class="backup-card"><span class="lock" aria-hidden="true">⌁</span><div><strong>Password encrypted</strong><p>Switchboard cannot recover a forgotten backup password.</p></div></div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="section-heading"><div><p class="eyebrow">COMMON QUESTIONS</p><h2>What to know before switching.</h2></div></div>
+      <div class="faq-list">
+        <details><summary>Can I use multiple accounts on the same website?</summary><p>Yes. Save each signed-in account under a name, then choose the one you want from Switchboard. In Chrome, one saved account is active for that website at a time. In Firefox, containers can keep separate accounts open simultaneously.</p></details>
+        <details><summary>Does Switchboard send my cookies anywhere?</summary><p>Switchboard does not upload your saved cookies or account data to a developer-operated server. When you use a website, your browser still sends the active cookies to that website as part of normal browsing.</p></details>
+        <details><summary>Will saved accounts stay signed in permanently?</summary><p>Switchboard preserves the session cookies it can save, but websites remain in control of their sessions. A website can expire or revoke a login and may ask you to sign in again.</p></details>
+        <details><summary>Can I move my saved accounts to another computer?</summary><p>Yes. Create a password-encrypted <code>.swb</code> backup and restore it on another device using the same browser type: Chrome to Chrome or Firefox to Firefox.</p></details>
+        <details><summary>Which websites does Switchboard support?</summary><p>You choose which websites to add and grant access to. Compatibility depends on how each website manages authentication, cookies, and session expiry.</p></details>
+      </div>
     </section>
 
     <section id="install" class="cta-section">

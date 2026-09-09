@@ -83,6 +83,15 @@ button, input, summary { font: inherit; }
 .backup-card { background: white; border: 1px solid #d1ded0; border-radius: 17px; padding: 25px; display: flex; align-items: center; gap: 17px; box-shadow: 0 12px 35px #173d2c0b; }
 .backup-card .lock { flex: 0 0 48px; height: 48px; border-radius: 13px; display: grid; place-items: center; background: var(--ink); color: var(--lime); font-size: 1.7rem; }
 .backup-card p { margin: 3px 0 0; color: var(--muted); font-size: .875rem; }
+.faq-section { display: grid; grid-template-columns: .7fr 1.3fr; gap: 80px; align-items: start; }
+.faq-section .section-heading { position: sticky; top: 28px; margin: 0; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); padding: 0 4px; }
+.faq-list summary { cursor: pointer; list-style: none; padding: 23px 40px 23px 0; font-weight: 720; position: relative; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; position: absolute; right: 4px; top: 19px; color: var(--green); font-size: 1.4rem; font-weight: 400; }
+.faq-list details[open] summary::after { content: "−"; }
+.faq-list p { color: var(--muted); margin: -5px 44px 23px 0; }
 .cta-section { text-align: center; padding: 112px 24px; }
 .cta-section .eyebrow { margin-bottom: 16px; }
 .cta-section h2 { margin-inline: auto; }
@@ -123,6 +132,8 @@ footer { min-height: 132px; border-top: 1px solid var(--line); display: flex; al
   .product-demo { max-width: 520px; width: 100%; margin: auto; transform: none; }
   .section { padding: 72px 0; } .flow { grid-template-columns: 1fr; } .flow h3 { margin-top: 25px; }
   .privacy-section, .backup-section { grid-template-columns: 1fr; gap: 40px; }
+  .faq-section { grid-template-columns: 1fr; gap: 34px; }
+  .faq-section .section-heading { position: static; }
   .backup-section { padding-left: 16px; padding-right: 16px; }
   .legal-layout { grid-template-columns: 1fr; gap: 40px; } .legal-nav { display: none; }
   .legal-header { padding: 60px 0 48px; }
