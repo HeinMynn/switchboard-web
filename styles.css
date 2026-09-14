@@ -28,7 +28,7 @@ button, input, summary { font: inherit; }
 .btn.secondary:hover { border-color: #9db4a0; background: white; }
 .btn.firefox-button { background: white; color: var(--ink); border-color: #cbd8cc; box-shadow: 0 8px 20px #173d2c0a; }
 .btn.firefox-button:hover { background: #f1f5ef; border-color: #9db4a0; }
-.btn .firefox-mark { width: 20px; height: 20px; border-radius: 50%; font-size: .65rem; }
+.store-icon { width: 21px; height: 21px; display: block; }
 .chrome-mark { width: 20px; height: 20px; border-radius: 50%; display: inline-block; background: conic-gradient(#e94235 0 33%, #fabb05 0 66%, #34a853 0); position: relative; box-shadow: inset 0 0 0 1px #00000012; }
 .chrome-mark::after { content: ""; position: absolute; inset: 5px; border-radius: 50%; background: #4285f4; border: 2px solid white; }
 .trust-line { display: flex; flex-wrap: wrap; gap: 22px; color: #687d70; font-size: .79rem; font-weight: 650; }
@@ -68,7 +68,6 @@ button, input, summary { font: inherit; }
 .browser-card.featured { background: var(--ink); color: white; border-color: var(--ink); }
 .card-top { display: flex; align-items: center; justify-content: space-between; }
 .browser-icon { width: 38px; height: 38px; }
-.firefox-mark { display: grid; place-items: center; color: white; background: linear-gradient(135deg, #ff9d00, #ff3d64 55%, #6553c7); font-weight: 800; }
 .availability { font-size: .72rem; font-weight: 750; padding: 5px 10px; background: var(--lime); color: #254a33; border-radius: 20px; }
 .availability.muted { background: var(--soft); color: #55705c; }
 .browser-card h3 { font-size: 1.55rem; margin: 52px 0 10px; }
