@@ -28,7 +28,7 @@ button, input, summary { font: inherit; }
 .btn.secondary:hover { border-color: #9db4a0; background: white; }
 .btn.firefox-button { background: white; color: var(--ink); border-color: #cbd8cc; box-shadow: 0 8px 20px #173d2c0a; }
 .btn.firefox-button:hover { background: #f1f5ef; border-color: #9db4a0; }
-.store-icon { width: 21px; height: 21px; display: block; }
+.btn img.store-icon { width: 20px; height: 20px; flex: 0 0 20px; display: block; object-fit: contain; }
 .chrome-mark { width: 20px; height: 20px; border-radius: 50%; display: inline-block; background: conic-gradient(#e94235 0 33%, #fabb05 0 66%, #34a853 0); position: relative; box-shadow: inset 0 0 0 1px #00000012; }
 .chrome-mark::after { content: ""; position: absolute; inset: 5px; border-radius: 50%; background: #4285f4; border: 2px solid white; }
 .trust-line { display: flex; flex-wrap: wrap; gap: 22px; color: #687d70; font-size: .79rem; font-weight: 650; }
